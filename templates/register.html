@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{url for('static',filename='css/static/style.css')}}">
+</body>
     <title>Register page</title>
 </head>
 
@@ -12,15 +13,16 @@
     <header>Register</header>
     <main>
         <h2>Student Registration </h2>
+        <form id=""registerForm" method="POST>"
         <form>
             <label>Full Name</label><br>
-            <input type="text" placeholder="Enter Your Name"><br>
+            <input type="text" placeholder="Enter Your Name" id="name" name="name"><br>
             <label>Email</label><br>
-            <input type="email" placeholder="Enter your email"><br>
+            <input type="email" placeholder="Enter your email" id="email" name="email"><br>
             <label>Password</label><br>
-            <input type="password" placeholder="Enter Your Password"><br>
+            <input type="password" placeholder="Enter Your Password" id="password" name="password"><br>
             <label>Date of Birth</label><br>
-            <input type="date" placeholder="DOB"><br>
+            <input type="date" placeholder="DOB" id="dob" name="dob"><br>
             <label>Gender</label><br>
             <input type="radio" name="gender">Male
             <input type="radio" name="gender">Female <br><br>
@@ -32,7 +34,8 @@
             </select>
         </form>
     </main>
-
+    <script src="{{url for('static',filename='js/script.js')}}"></script>
 </body>
+    
 
 </html>

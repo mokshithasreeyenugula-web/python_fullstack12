@@ -15,3 +15,14 @@ authorization tells what you can able to do eg: staff and students
 react-web framework for frontend development is javascript
 flask.fastapi.django- web framework for backend development in python
 orm- object relational mapping, it is a technique that allows you to query and manipulate data from a database.
+
+#status codes
+200 ok
+201 created
+204 no content
+400 bad request
+401 unauthorized
+403 forbidden
+404 not found
+500 internal server error
+503 service unavailable
